@@ -1,0 +1,162 @@
+:root {
+  --white: #faf6ec;
+  --green:#b8cfb0;
+  --red:#d7919a;
+  --border:#809d95;
+  --background:#fff9ef;
+  --lightblue:#798cb4;
+  --darkblue:#3e6cac;
+	--brown:#916b48;
+}
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #bddcbf;
+  align-items: center;
+  user-select: none;
+}
+main {
+  width: 80vw;
+  display:flex;
+  flex-wrap: nowrap;
+}
+#vocabTool {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 350px;
+}
+#card {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: solid #406688;
+  border-width: 2px;
+  border-radius: 18px 18px 30px 30px;
+  width: 280px;
+  box-shadow: 2px 2px 0 #ccc;
+  padding: 4px 15px 10px 15px;
+  margin: 10px 10px 10px 5px;
+  background-color: #faf6ec;
+}
+#chapterList {
+  min-width: 200px;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 18px;
+  position: relative;
+  color: var(--lightblue);
+}
+#chapterList p {
+  font-size: 20px;
+  position: relative;
+  color: var(--darkblue);
+  margin: 0px 0px 10px 0px;
+  padding: 0;
+}
+p#german {
+  font-size: 45px;
+  margin: 20px 0px 30px 0px;
+  text-align: center;
+}
+ul#rules {
+  margin-left: 40px;
+  padding: 0;
+  height: 60px; 
+  color: var(--white);
+}
+ul#rules.showGrammar  {
+  color: #3e6cac;
+}
+p#english {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--white);
+}
+p#english.showing{
+  color: var(--darkblue);
+}
+p#english.alwaysOn{
+  color: var(--darkblue);
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+	font-size: 1.2em;
+	color: #394c68;
+	background: #c6d9f3;
+	border: 2px solid #8fa2bc;
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: 2px 3px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button#random {  
+  margin-left: 10px;
+}
+button#grammar {  
+  display: block;
+  width: 120px;
+  margin: 10px 30px 0 30px;
+}
+button#previous{
+  margin-right: 4px;
+}
+button#previous:before {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  content: '';
+  line-height: 0;
+  height: 1px;
+  width: 1px;
+  border: 8px solid transparent;
+  border-right: 10px solid var(--darkblue);
+  border-left: none;
+  margin-right: 10px;
+}
+button#next:after {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  content: '';
+  line-height: 0;
+  height: 1px;
+  width: 1px;
+  border: 8px solid transparent;
+  border-left: 10px solid var(--darkblue);
+  border-right: none;
+  margin-left: 10px;
+}
+button#translation {  
+  display: block;
+  width: 120px;
+  margin: 10px 30px 0 30px;
+}
+button#delay {  
+  display: block;
+  width: 120px;
+  margin: 10px 30px 0 30px;
+}
+button#grammar.buttonPress , button#translation.buttonPress {  
+	background: #a6bbd8;
+}
+
+
+@media all and (max-width: 400px) {
+  main {
+    display:block;
+  }
+  #chapterList {
+    min-width: 180px;
+    margin-left: 20px;
+  }
+  #vocabTool {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    width: 330px;
+  }
+}
