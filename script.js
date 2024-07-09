@@ -472,6 +472,7 @@ const wordList = [
     {eng: "to ask about", ger: "fragen nach", rules:[""]},
     {eng: "joy", ger: "Freude", rules:["die Freude"]},
     {eng: "guest", ger: "Gast", rules:["der Gast"]},
+    {eng: "opponent", ger: "Gegner", rules:["der Gegner"]},
   ],
   // ö ä ü ß Ü Ö Ä é É -¨e
   //Empty cells for copying
